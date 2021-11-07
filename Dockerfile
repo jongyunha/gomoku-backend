@@ -14,7 +14,5 @@ EXPOSE 4000
 
 COPY ./ ./
 
-RUN go build -o gomoku-server main.go
-
-CMD ["./gomoku-server"]
+CMD ["go", "run", "main.go"]
 
